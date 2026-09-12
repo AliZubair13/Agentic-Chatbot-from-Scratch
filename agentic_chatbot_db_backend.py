@@ -16,11 +16,10 @@ load_dotenv()
 # llm = ChatOpenAI()
 
 ## if you want to use Gemini LLM 
-llm = ChatGoogleGenerativeAI(
-    model="gemini-2.5-flash",
+llm = ChatOpenAI(
+    model="gpt-4o-mini",
     temperature=0.7
 )
-
 
 class ChatState(TypedDict):
 
